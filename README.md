@@ -2,6 +2,7 @@
 
 
 Home-page-form.html is what we have currently.
+
 mailchimp-fullform.html is the Mailchimp form out of the box
 
 We want to improve this form in multiple ways
