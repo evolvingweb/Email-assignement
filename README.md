@@ -12,4 +12,8 @@ Currently **homepage-form.html** collects only the email field. We want to impro
 
 ![GitHub Logo](https://github.com/evolvingweb/mailchimp-assignment/blob/master/mockup.jpg?raw=true)
 
-Provide the solution as a pull request.
+Please be sure to test your work with Mailchimp test account. Provide the initial solution as a pull request. There should be no PHP code yet. 
+
+You can use the following service for previewing HTML hosted in GitHub:
+
+[https://htmlpreview.github.io/?https://github.com/evolvingweb/mailchimp-assignment/blob/master/homepage-form.html](https://htmlpreview.github.io/?https://github.com/evolvingweb/mailchimp-assignment/blob/master/homepage-form.html)
