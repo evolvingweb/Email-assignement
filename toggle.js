@@ -2,6 +2,12 @@ $(document).ready(function() {
   // Make sure the field will be  displayed on page reload if there is input.
   toggleCity();
 
+  $( "#mce-CITY" ).autocomplete({
+    source: "data/cities.json",
+    dataType: "jsonp",
+    minLength: 2
+  });
+
 });
 
 function toggleCity() {
@@ -9,9 +15,9 @@ function toggleCity() {
   var cityField = $("#mce-CITY");
 
   if (hasInput) {
-    $("#mce-CITY").show();
+    cityField.show();
   }
   else {
-    $("#mce-CITY").hide();
+    cityField.hide();
   }
 }

@@ -1,6 +1,19 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Mailchimp's CSS -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<!-- Default CSS for JQuery UI smoothness -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<!-- Our custom CSS -->
 <link href="style.css" rel="stylesheet" type="text/css">
+
+<!-- @TODO Remove: JQuery, included in Drupal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- @TODO Remove: JQuery UI, included in Drupal -->
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!-- Mailchimp validation script -->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='CITY';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!-- Our custom JS -->
+<script type='text/javascript' src='toggle.js'></script>
+
 
 <!-- Begin MailChimp Signup Form -->
 <div class="mailchimp-form">
@@ -8,7 +21,7 @@
   <p>Receive email notifications about our upcoming training courses.</p>
   <div id="mc_embed_signup">
     <!-- @TODO Change the Action's address -->
-    <form action="http://evolvingweb.us12.list-manage.com/subscribe/post?u=918ec948a6a72293407fe5326&amp;id=a6e7022dc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="//example.us13.list-manage.com/subscribe/post?u=474d7011b8c889ed17a54d780&amp;id=cd545b6efa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
         <div class="mc-field-group">
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" oninput="toggleCity()">
@@ -25,7 +38,5 @@
       </div>
     </form>
   </div>
-  <script type='text/javascript' src='toggle.js'></script>
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='CITY';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </div>
 <!--End mc_embed_signup-->

@@ -6,7 +6,6 @@
   text-align: center;
   width: 447px;
 }
-
 #mc_embed_signup {
   clear: left;
   font: 14px Arial, Helvetica, sans-serif;
@@ -53,4 +52,7 @@
 }
 #mc_embed_signup .mc-field-group input#mce-CITY {
   display: none;
+}
+.ui-autocomplete-loading {
+  background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
 }
