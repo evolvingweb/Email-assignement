@@ -6,6 +6,7 @@
   text-align: center;
   width: 447px;
 }
+
 #mc_embed_signup {
   clear: left;
   font: 14px Arial, Helvetica, sans-serif;
@@ -48,5 +49,8 @@
   padding: 10px 32px 8px;
 }
 #mc_embed_signup #mce-success-response {
-    color: #ffffff;
+  color: #ffffff;
+}
+#mc_embed_signup .mc-field-group input#mce-CITY {
+  display: none;
 }

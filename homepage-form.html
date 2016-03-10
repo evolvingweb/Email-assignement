@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -10,7 +11,7 @@
     <form action="http://evolvingweb.us12.list-manage.com/subscribe/post?u=918ec948a6a72293407fe5326&amp;id=a6e7022dc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
         <div class="mc-field-group">
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" >
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" oninput="toggleCity()">
         </div>
         <div class="mc-field-group">
           <input type="text" value="" name="CITY" class="required" id="mce-CITY" placeholder="City">
@@ -24,6 +25,7 @@
       </div>
     </form>
   </div>
+  <script type='text/javascript' src='toggle.js'></script>
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='CITY';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </div>
 <!--End mc_embed_signup-->
