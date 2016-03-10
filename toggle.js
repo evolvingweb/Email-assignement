@@ -1,7 +1,15 @@
+/**
+ * @file toggle.js
+ * JS for handling the subscription form.
+ *
+ * Toggles the visibility of the 'city' field and get the reverse geolocation.
+ */
+
 $(document).ready(function() {
-  // Make sure the field will be  displayed on page reload if there is input.
+  // Make sure the field will be displayed on page reload if there is input.
   toggleCity();
 
+  // Autocomplete for 'city' field.
   $( "#mce-CITY" ).autocomplete({
     source: "data/cities.json",
     dataType: "jsonp",
@@ -49,6 +57,9 @@ $(document).ready(function() {
 
 });
 
+/**
+ * Helper function to toggle 'city' field visibility.
+ */
 function toggleCity() {
   var hasInput = document.getElementById("mce-EMAIL").value.length;
   var cityField = $(".mc-field-group-city");
