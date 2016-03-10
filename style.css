@@ -51,7 +51,6 @@
   color: #ffffff;
 }
 #mc_embed_signup .mc-field-group input#mce-CITY {
-  display: none;
   border: medium none !important;
   border-radius: 3px;
   font-size: 14px;
@@ -60,4 +59,7 @@
 }
 .ui-autocomplete-loading {
   background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+.mc-field-group-city {
+  display: none;
 }

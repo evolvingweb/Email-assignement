@@ -51,12 +51,12 @@ $(document).ready(function() {
 
 function toggleCity() {
   var hasInput = document.getElementById("mce-EMAIL").value.length;
-  var cityField = $("#mce-CITY");
+  var cityField = $(".mc-field-group-city");
 
   if (hasInput) {
-    cityField.show();
+    cityField.show("slow");
   }
   else {
-    cityField.hide();
+    cityField.hide("slow");
   }
 }
