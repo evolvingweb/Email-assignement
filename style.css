@@ -1,49 +1,65 @@
-.mailchimp-form{
-	background: #1379a7 none repeat scroll 0 0;
-	color: #ffffff;
-	padding: 1px 10px 40px;
-	text-align: center;
-	width: 447px;
+.mailchimp-form {
+  font: 14px Arial, Helvetica, sans-serif;
+  background: #1379a7 none repeat scroll 0 0;
+  color: #ffffff;
+  padding: 1px 10px 40px;
+  text-align: center;
+  width: 447px;
 }
-
 #mc_embed_signup {
-    background: #fff none repeat scroll 0 0;
-    clear: left;
-    font: 14px Helvetica,Arial,sans-serif;
+  clear: left;
+  font: 14px Arial, Helvetica, sans-serif;
 }
 #mce-EMAIL {
-    border: medium none !important;
-    border-radius: 3px 0 0 3px;
-    font-size: 14px;
-    height: 51px;
-    padding: 19px 28px 18px !important;
-    width: 322px;
+  border: medium none !important;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 51px;
+  padding: 19px 28px 18px !important;
+  width: 322px;
 }
 #mc_embed_signup form {
-    display: block;
-    position: relative;
-    text-align: left;
+  display: block;
+  position: relative;
+  text-align: left;
 }
 #mc_embed_signup .button {
-    border: 0 none;
-    clear: both;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0 5px 10px 0;
-    padding: 0 22px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: top;
-    white-space: nowrap;
-    width: auto;
+  background-color: #74b74a;
+  border: 0 none;
+  clear: both;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px 10px 0;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
 }
 #mc-embedded-subscribe {
-    background-color: #74b74a;
-    border-radius: 0 3px 3px 0;
-    font-size: 14px;
-    height: 51px;
-    padding: 10px 32px 8px;
+  background-color: #74b74a;
+  border-radius: 0 3px 3px 0;
+  font-size: 14px;
+  height: 51px;
+  padding: 10px 32px 8px;
+}
+#mc_embed_signup #mce-success-response {
+  color: #ffffff;
+}
+#mc_embed_signup .mc-field-group input#mce-CITY {
+  border: medium none !important;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 51px;
+  padding: 19px 28px 18px !important;
+}
+.ui-autocomplete-loading {
+  background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+.mc-field-group-city {
+  display: none;
 }
