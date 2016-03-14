@@ -5,7 +5,7 @@
  * Toggles the visibility of the 'city' field and get the reverse geolocation.
  */
 
-$(document).ready(function() {
+$(function($){
   // List of available cities.
   // Remote data is not working in Firefox. Google library is an lighter option
   // than JQuery UI: https://jsfiddle.net/cbwd42yv/
@@ -16,28 +16,38 @@ $(document).ready(function() {
     "New York, USA"
   ];
 
-  // Make sure the field will be displayed on page reload if there is input.
-  toggleCity();
+  // City field.
+  var cityField = $("#mce-CITY");
+  // e-mail Field.
+  var emailField = $( "#mce-EMAIL" );
+
+  // Hide city field.
+  $("#mc-field-group-city").hide();
 
   // Autocomplete for 'city' field.
-  $( "#mce-CITY" ).autocomplete({
+  cityField.autocomplete({
     source: availableCities,
     minLength: 2
   });
 
+  // Geolocate once on focus on e-mail field.
+  emailField.one( "focus", function() {
+    $.getJSON("http://geoip.nekudo.com/api?callback=?", function (data) {
+      cityField.val(data.city);
+    });
+  });
+
+  // Toggle city field visibility on e-mail input.
+  emailField.on('input', function(){
+    var hasInput = document.getElementById("mce-EMAIL").value.length;
+    var cityField = $("#mc-field-group-city");
+
+    if (hasInput) {
+      cityField.show("slow");
+    }
+    else {
+      cityField.hide();
+    }
+  });
+
 });
-
-/**
- * Helper function to toggle 'city' field visibility.
- */
-function toggleCity() {
-  var hasInput = document.getElementById("mce-EMAIL").value.length;
-  var cityField = $("#mc-field-group-city");
-
-  if (hasInput) {
-    cityField.show("slow");
-  }
-  else {
-    cityField.hide();
-  }
-}
