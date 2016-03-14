@@ -12,9 +12,6 @@
 <!-- Our custom JS -->
 <script type='text/javascript' src='toggle.js'></script>
 
-<!-- Google GeoLocation API for reverse geocoding -->
-<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-
 <!-- Begin MailChimp Signup Form -->
 <div class="mailchimp-form">
   <h2>Sign up for our monthly training newsletter</h2>
@@ -26,7 +23,7 @@
         <div class="mc-field-group">
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" oninput="toggleCity()">
         </div>
-        <div class="mc-field-group mc-field-group-city">
+        <div class="mc-field-group" id="mc-field-group-city">
           <input type="text" value="Montreal, Canada" name="CITY" class="required" id="mce-CITY" placeholder="City" value="Montreal, Canada">
         </div>
         <div id="mce-responses" class="clear">
