@@ -26,7 +26,19 @@ $(function($){
 
   // Autocomplete for 'city' field.
   cityField.autocomplete({
-    source: availableCities,
+    source: function( request, response ) {
+      $.ajax({
+        url: "//gd.geobytes.com/AutoCompleteCity",
+        dataType: "jsonp",
+        data: {
+          q: request.term
+        },
+        crossDomain: true,
+        success: function( data ) {
+          response( data );
+        }
+      });
+    },
     minLength: 2
   });
 
